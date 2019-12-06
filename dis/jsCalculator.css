@@ -101,34 +101,64 @@
 }
 
 @-webkit-keyframes numFlash {
-    0% {
-        background-color:#777;
-        opacity:1;
-    }
-    100% {
-        background-color: #333;
-    }
+  0% { background-color:#777; opacity:1; }
+  100% { background-color: #333; }
 }
     
 .numFlash {
-    -webkit-animation-name: numFlash;
-    -webkit-animation-duration: 80ms;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-in-out;
+
+  /* Chrome/Safari */
+  -webkit-animation-name: numFlash;
+  -webkit-animation-duration: 80ms;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+
+  /* Mozilla */
+  -moz-animation-name: numFlash;
+  -moz-animation-duration: 80ms;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in-out;
+
+  /* Opera */
+  -o-animation-name: numFlash;
+  -o-animation-duration: 80ms;
+  -o-animation-iteration-count: 1;
+  -o-animation-timing-function: ease-in-out;
+
+  /* Internet Explorer */
+  -ms-animation-name: numFlash;
+  -ms-animation-duration: 80ms;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-timing-function: ease-in-out;
 }  
 
 
 @-webkit-keyframes functionFlash {
-  0% {
-    background-color:lightblue;    
-  }
-  100% {
-    background-color:blue;
-  }
+  0% { background-color:lightblue; }
+  100% { background-color:blue; }
 }
 .functionFlash {
-    -webkit-animation-name: functionFlash;
-    -webkit-animation-duration: 80ms;
-    -webkit-animation-iteration-count: 1;
-    -webkit-animation-timing-function: ease-in-out;
+  /* Chrome/Safari */
+  -webkit-animation-name: functionFlash;
+  -webkit-animation-duration: 80ms;
+  -webkit-animation-iteration-count: 1;
+  -webkit-animation-timing-function: ease-in-out;
+
+  /* Mozilla */
+  -moz-animation-name: functionFlash;
+  -moz-animation-duration: 80ms;
+  -moz-animation-iteration-count: 1;
+  -moz-animation-timing-function: ease-in-out;
+
+  /* Opera */
+  -o-animation-name: functionFlash;
+  -o-animation-duration: 80ms;
+  -o-animation-iteration-count: 1;
+  -o-animation-timing-function: ease-in-out;
+
+  /* Internet Explorer */
+  -ms-animation-name: functionFlash;
+  -ms-animation-duration: 80ms;
+  -ms-animation-iteration-count: 1;
+  -ms-animation-timing-function: ease-in-out;
 } 
