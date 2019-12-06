@@ -1,0 +1,134 @@
+#main {
+  width:500px;
+  background-color:#565656;
+}
+#screen {
+  position:relative;
+  width:100%;
+  height:150px;
+}
+#entry {
+  width:98%;
+  padding-top:30px;
+  font-size:3em;
+  color:#fff;
+  text-align:right;
+  letter-spacing:0.09em;
+}
+#result {
+  width:97%;
+  padding-top:18px;
+  text-align:right;
+  color:#c7c7c7;
+  font-size:1.5em;
+  padding-right:30px;
+}
+.error {
+  color: pink !important;
+}
+
+#calculator {
+  padding-left:10px;
+  padding-top:10px;
+  background-color:#333;
+  width:calc (100% - 10px);
+  height:490px;
+  position:relative;
+}
+#clear {
+  position:absolute;
+  color:#fbfbfb;
+  left:0px;
+  top:2px;
+  padding:3px 8px;
+  cursor:pointer;
+}
+#clear:hover {
+  background-color:#333;
+}
+
+#numbers {
+  width:380px;
+  border-right:1px solid #365763;
+  display:inline-block;
+  vertical-align:top;
+}
+#functions {
+  vertical-align:top;
+  display:inline-block;
+  width:100px;  
+}
+.function {
+  width:100px;
+  height:95px;
+  color:lightblue;
+  font-size:2em;
+  text-align:center;
+  position:relative;
+  cursor:pointer;
+  font-weight:bold;
+}
+.function:hover {
+  background-color:#365763;
+  color:#fff;
+}
+.function div {
+  width:100%;
+  height:95px;
+  vertical-align:middle;
+  padding-top:28px;
+}
+
+.num, .equals {
+  width:120px;
+  height:120px;
+  display:inline-block;
+  color:#fff;
+  font-size:3em;
+  text-align:center;
+  position:relative;
+  cursor:pointer;
+}
+.num:hover, .equals:hover {
+  background-color:#565656;
+}
+
+.num div, .equals div {
+  width:100%;
+  height:120px;
+  vertical-align:middle;
+  padding-top:30px;
+}
+
+@-webkit-keyframes numFlash {
+    0% {
+        background-color:#777;
+        opacity:1;
+    }
+    100% {
+        background-color: #333;
+    }
+}
+    
+.numFlash {
+    -webkit-animation-name: numFlash;
+    -webkit-animation-duration: 80ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+}  
+
+
+@-webkit-keyframes functionFlash {
+  0% {
+    background-color:lightblue;    
+  }
+  100% {
+    background-color:blue;
+  }
+}
+.functionFlash {
+    -webkit-animation-name: functionFlash;
+    -webkit-animation-duration: 80ms;
+    -webkit-animation-iteration-count: 1;
+    -webkit-animation-timing-function: ease-in-out;
+} 
